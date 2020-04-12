@@ -8,7 +8,7 @@
 // @version       1.0.0
 // @license       GPL-3.0-or-later
 // ==/UserScript==
-(function () {
+(function() {
 	var css = `
 .hand .handcontainer .cardinhand {
 	width: calc((100% / 3) - 20px);
@@ -30,29 +30,29 @@
 	width: 500px;
 }
 `;
-	if (typeof GM_addStyle != "undefined") {
-		GM_addStyle(css);
-	} else if (typeof PRO_addStyle != "undefined") {
-		PRO_addStyle(css);
-	} else if (typeof addStyle != "undefined") {
-		addStyle(css);
-	} else {
+if (typeof GM_addStyle != "undefined") {
+	GM_addStyle(css);
+} else if (typeof PRO_addStyle != "undefined") {
+	PRO_addStyle(css);
+} else if (typeof addStyle != "undefined") {
+	addStyle(css);
+} else {
 
-		const node = document.createElement("style");
-		node.type = "text/css";
-		node.innerHTML = css;
+	const node = document.createElement("style");
+	node.type = "text/css";
+	node.innerHTML = css;
 
-		// Note(stormy): wait for document.head to be available
-		const interval = 10;
-		const waitForDepts = () => {
-			if (!document.head) {
-				setTimeout(waitForDepts, 10);
-				return;
-			}
-
-			document.head.appendChild(node);
-
+	// Note(stormy): wait for document.head to be available
+	const interval = 10;
+	const waitForDepts = () => {
+		if (!document.head) {
+			setTimeout(waitForDepts, 10);
+			return;
 		}
-		setTimeout(waitForDepts, 10);
+
+		document.head.appendChild(node);
+
 	}
+	setTimeout(waitForDepts, 10);
+}
 })();
