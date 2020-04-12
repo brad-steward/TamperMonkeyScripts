@@ -5,14 +5,14 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       1.0.0
+// @version       1.0.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {
 	var css = `
 .hand .handcontainer .cardinhand {
-	width: calc((100% / 3) - 20px);
-	margin: 10px;
+	width: calc((100% / 2) - 10px);
+	margin: 5px;
 }
 
 .hand .handcontainer .cardinhand a.lightly {
