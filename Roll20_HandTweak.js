@@ -1,16 +1,15 @@
+// ==UserScript==
+// @name          Roll20 Expanded Hand Display
+// @description	  A minor CSS Tweak for Roll20's Hand display (when using card decks)
+// @author        brad.steward
+// @include       https://app.roll20.net/editor*
+// @include       https://app.roll20.net/campaigns/chatarchive*
+// @run-at        document-start
+// @version       1.0.0
+// @license       GPL-3.0-or-later
+// ==/UserScript==
 (function() {
     'use strict';
-
-    // ==UserScript==
-    // @name          Roll20 Expanded Hand Display
-    // @description	  A minor CSS Tweak for Roll20's Hand display (when using card decks)
-    // @author        brad.steward
-    // @include       https://app.roll20.net/editor*
-    // @include       https://app.roll20.net/campaigns/chatarchive*
-    // @run-at        document-start
-    // @version       1.0.0
-    // @license       GPL-3.0-or-later
-    // ==/UserScript==
     (function() {var css =`
 .hand .handcontainer .cardinhand {
   width: calc((100% / 3) - 20px);
