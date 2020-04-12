@@ -8,8 +8,6 @@
 // @version       1.0.0
 // @license       GPL-3.0-or-later
 // ==/UserScript==
-(function() {
-    'use strict';
     (function() {var css =`
 .hand .handcontainer .cardinhand {
   width: calc((100% / 3) - 20px);
@@ -56,5 +54,3 @@ width: 100%;
                  setTimeout(waitForDepts, 10);
              }
             })();
-
-})();
