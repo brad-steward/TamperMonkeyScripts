@@ -1,5 +1,7 @@
 // ==UserScript==
 // @name          Roll20 Expanded Hand Display
+// @namespace     https://github.com/brad-steward/TamperMonkeyScripts/blob/master/Roll20_HandTweak.js
+// @updateURL     https://raw.githubusercontent.com/brad-steward/TamperMonkeyScripts/master/Roll20_HandTweak.js
 // @description	  A minor CSS Tweak for Roll20's Hand display (when using card decks)
 // @author        brad.steward
 // @include       https://app.roll20.net/editor*
@@ -11,7 +13,7 @@
 (function() {
 	var css = `
 .hand .handcontainer .cardinhand {
-	width: calc((100% / 2) - 10px);
+	width: calc((100% / 2) - 20px);
 	margin: 5px;
 }
 
