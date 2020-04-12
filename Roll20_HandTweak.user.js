@@ -3,11 +3,11 @@
 // @namespace     https://github.com/brad-steward/TamperMonkeyScripts/blob/master/Roll20_HandTweak.js
 // @updateURL     https://raw.githubusercontent.com/brad-steward/TamperMonkeyScripts/master/Roll20_HandTweak.js
 // @description	  A minor CSS Tweak for Roll20's Hand display (when using card decks)
-// @author        brad.steward
+// @author        brad-steward
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       1.0.1
+// @version       1.0.2
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {
